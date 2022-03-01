@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shut the box</title>
+    <script type="text/javascript" src="task2.js"></script>
+    <style>
+        #sub1 {
+            margin: 10px;
+        }
+
+        #sub {
+            margin: 10px;
+        }
+
+        .rollBtn,
+        .submitc {
+            border: 2px solid black;
+            width: 70%;
+        }
+
+        .roll {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shut the Box</h1>
+   
+    <h3>Dice Roll</h3>
+    <div class="rollBtn">
+        <button class="roll" onclick="rollDice()">Roll dice</button> <span id="res">Result:</span>
+    </div>
+    <h3>Box Selection</h3>
+    <div>
+        <table>
+            <tr>
+                <td> 1</td>
+                <td> 2</td>
+                <td> 3</td>
+                <td> 4</td>
+                <td> 5</td>
+                <td> 6</td>
+                <td> 7</td>
+                <td> 8</td>
+                <td> 9</td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="1">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="2">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="3">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="4">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="5">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="6">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="7">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="8">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" class="check" value="9">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="submitc">
+        <input type="submit" id="sub1" onclick="submit()" value="Submit Box Selection" disabled>
+        <input type="submit" id="sub" onclick="giveUp()" value="I giveup I can't make valid move">
+    </div>
+</body>
+
+</html>
